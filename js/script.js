@@ -67,7 +67,7 @@ const galleryMarkup = images
 galleryContainer.innerHTML = galleryMarkup;
 
 galleryContainer.addEventListener("click", (e) => {
-  e.preventDefault();
+  e.preventDefault(); // yeni sayfada açılmasını engeller
 
   const clickedImage = e.target;
   if (clickedImage.nodeName !== "IMG") return;
